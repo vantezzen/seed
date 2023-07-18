@@ -1,0 +1,47 @@
+{
+  "name": "@vantezzen/seed",
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/main.es.js",
+      "require": "./dist/main.cjs.js"
+    }
+  },
+  "main": "./dist/main.cjs.js",
+  "module": "./dist/main.es.js",
+  "typings": "./dist/main.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "lint": "prettier --write ./src"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.0.2",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@types/debug": "^4.1.8",
+    "@types/node": "^20.4.2",
+    "eslint": "^8.45.0",
+    "prettier": "^3.0.0",
+    "rollup-plugin-typescript-paths": "^1.4.0",
+    "tslib": "^2.6.0",
+    "typeorm": "^0.3.17",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.0",
+    "vitest": "^0.33.0"
+  },
+  "dependencies": {
+    "debug": "^4.3.4",
+    "eslint-plugin-unused-imports": "^3.0.0",
+    "sql.js": "^1.8.0"
+  },
+  "peerDependencies": {
+    "typeorm": "^0.2.0"
+  }
+}
